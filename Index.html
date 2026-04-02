@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Japan Weather App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="app">
+        <h1>日本の天気</h1>
+
+        <form id="weather-form">
+            <input type="text" id="city-input" placeholder="都市名を入力 (例: 東京, 大阪, 札幌)" autocomplete="off" required />
+            <button type="submit">検索</button>
+        </form>
+
+        <div id="weather-result" class="card hidden">
+            <h2 id="city-name"></h2>
+            <p id="country"></p>
+            <div class="main-info">
+                <span id="temp" class="temp"></span>
+                <img id="icon" alt="weather icon" />
+            </div>
+            <p id="description"></p>
+            <p id="details"></p>
+        </div>
+
+        <p id="error-message" class="error hidden"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
